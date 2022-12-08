@@ -2,7 +2,7 @@ import pyperclip
 import time
 import keyboard
 
-title = input('ファイル名を入力してください：')
+title = input('セクション名を入力してください：')
 
 title = title.replace(' ', '_')
 title = title + '.txt'

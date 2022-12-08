@@ -1,0 +1,2 @@
+Power electronics allows the efficient processing of electrical energy through means of electronic switching devices. 
+Nowadays, 40% of the worldwide energy is consumed as electric energy, and therefore, power electronics plays a key role in its generation–storage–distribution cycle. 

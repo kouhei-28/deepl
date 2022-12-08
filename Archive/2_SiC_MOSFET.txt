@@ -1,0 +1,2 @@
+The largest portion of the power losses in power electronic converters is dissipated in their power semiconductor devices. Currently, these power devices are based on the mature and very well established Si technology although Si exhibits some important limitations regarding blocking voltage capability, operation temperature, and switching frequency. 
+At present, the highest commercial Si IGBT breakdown voltage capability is 6.5 kV with a limited switching performance, and not any Si-based device may operate above 200 ◦C. 

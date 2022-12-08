@@ -1,6 +1,7 @@
 import pyperclip
 import time
 import keyboard
+import subprocess
 
 title = input('セクション名を入力してください：')
 
@@ -9,6 +10,7 @@ title = title + '.txt'
 # f = open(title, 'w', encoding='UTF-8')
 
 flag = False
+subprocess.Popen(['code', title], shell=True)
 
 while True:
     f = open(title, 'a', encoding='UTF-8')

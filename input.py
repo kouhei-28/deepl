@@ -36,6 +36,6 @@ while True:
         if flag == True:
             break
 
-    ans = input('さらにコピーを続けますか？(y/n)：')
+    ans = input('さらにコピーを続けますか？(y/n):')
     if ans == 'n':
         break

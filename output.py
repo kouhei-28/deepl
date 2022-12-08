@@ -4,7 +4,6 @@ import glob
 import os
 import shutil
 
-
 API_KEY = 'af8b9802-207d-2d98-20e7-05985839ff75:fx' # 自身の API キーを指定
 source_lang = 'EN'
 target_lang = 'JA'

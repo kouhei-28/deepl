@@ -24,17 +24,17 @@ def copy_text():
             while True:
                 currentText = pyperclip.paste()
                 if currentText != originalText:
-                    currentText = currentText.replace('\r\n', ' ')
+                    currentText = currentText.replace('\r\n', ' ').replace('', '')
                     f.write(currentText)
                     f.close()
                     break
                 time.sleep(0.01)
-                if keyboard.is_pressed('enter'):
-                # if True:
-                    f.write('\n')
-                    f.close
-                    time.sleep(0.5)
-                    break
+                # if keyboard.is_pressed('enter'):
+                # # if True:
+                #     f.write('\n')
+                #     f.close
+                #     time.sleep(0.5)
+                #     break
                 if keyboard.is_pressed('escape'):
                     f.close
                     flag = True
@@ -77,7 +77,6 @@ def translation(API_KEY, source_lang, target_lang):
         shutil.move(txt, "./Archive/")
 
     doc.save("Sample.docx")
-
 
 if __name__ == '__main__':
     API_KEY = 'af8b9802-207d-2d98-20e7-05985839ff75:fx' # 自身の API キーを指定

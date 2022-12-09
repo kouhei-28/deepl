@@ -29,12 +29,12 @@ def copy_text():
                     f.close()
                     break
                 time.sleep(0.01)
-                # if keyboard.is_pressed('enter'):
-                # # if True:
-                #     f.write('\n')
-                #     f.close
-                #     time.sleep(0.5)
-                #     break
+                if keyboard.is_pressed('tab'):
+                # if True:
+                    f.write('\n')
+                    f.close
+                    time.sleep(0.5)
+                    break
                 if keyboard.is_pressed('escape'):
                     f.close
                     flag = True

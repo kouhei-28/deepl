@@ -76,7 +76,7 @@ def translation(API_KEY, source_lang, target_lang):
         f.close()
         shutil.move(txt, "./Archive/")
 
-    doc.save("Sample.docx")
+        doc.save("Sample.docx")
 
 if __name__ == '__main__':
     API_KEY = 'af8b9802-207d-2d98-20e7-05985839ff75:fx' # 自身の API キーを指定

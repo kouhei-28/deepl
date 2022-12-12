@@ -24,17 +24,19 @@ def copy_text():
             while True:
                 currentText = pyperclip.paste()
                 if currentText != originalText:
-                    currentText = currentText.replace('\r\n', ' ').replace('', '')
+                    currentText = currentText.replace('\r\n', ' ').replace('', '') + ' '
+                    if currentText[-2] == '.':
+                        currentText = currentText + '\n'
                     f.write(currentText)
                     f.close()
                     break
                 time.sleep(0.01)
-                if keyboard.is_pressed('tab'):
-                # if True:
-                    f.write('\n')
-                    f.close
-                    time.sleep(0.5)
-                    break
+                # if keyboard.is_pressed('tab'):
+                # # if True:
+                #     f.write('\n')
+                #     f.close
+                #     time.sleep(0.5)
+                #     break
                 if keyboard.is_pressed('escape'):
                     f.close
                     flag = True
